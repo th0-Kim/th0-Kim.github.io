@@ -67,6 +67,7 @@ const ProjectList: React.FC = () => {
             key={idx.toString()}
             className={selectedYear === tab.year.toString() ? "on" : ""}
             tabTitle={tab.year.toString()}
+            aria-expanded={selectedYear === tab.year.toString() ? true : false}
             clickEvent={() => {
               handleTabClick(tab.year.toString());
               handleTabList();

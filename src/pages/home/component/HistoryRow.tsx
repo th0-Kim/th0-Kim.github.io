@@ -26,7 +26,7 @@ const HistoryRow: React.FC<Props> = ({
   rate,
 }) => {
   return (
-    <RowContainer className={className}>
+    <RowContainer className={className} tabIndex={0}>
       <RowName>
         <RowFlex>
           <RowLeft>프로젝트명</RowLeft>

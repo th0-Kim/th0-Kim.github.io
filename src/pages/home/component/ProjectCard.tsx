@@ -38,7 +38,7 @@ const ProjectCard: React.FC<Props> = ({
   const cardRef = useRef<HTMLDivElement>(null);
 
   return (
-    <CardContainer className={className} ref={cardRef}>
+    <CardContainer className={className} ref={cardRef} tabIndex={0}>
       <CardThumb>
         <span className="label-company">{company}</span>
         <img src={imgSrc} alt={`${name} 프로젝트`} />
@@ -64,13 +64,13 @@ const ProjectCard: React.FC<Props> = ({
         type="button"
         $isOpen={isOpen}
         onClick={() => {
-          setIsOpen((prev) => !prev);
+          setIsOpen((isOpen) => !isOpen);
         }}
       >
         <span>{isOpen ? "Close" : "Click!!"}</span>
       </ButtonOpenLayer>
       <CardLayerDim $isOpen={isOpen} aria-hidden={isOpen ? false : true}>
-        <div>
+        <div tabIndex={isOpen ? 0 : -1}>
           <ProjectIntroduce>프로젝트 소개</ProjectIntroduce>
           {subscript && <ProjectSubscript>{subscript}</ProjectSubscript>}
           <ProjectContribution>
@@ -107,21 +107,10 @@ const ButtonOpenLayer = styled.button<{ $isOpen: boolean }>`
   background: rgba(255, 255, 255, 0.6);
   transition: all 0.5s;
   transform: translate(40px, 40px);
-  & > span {
-    opacity: 0;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1;
-    color: rgba(0, 149, 255, 0.9);
+  &:hover {
+    transform-origin: bottom right;
+    animation: swing 2s ease infinite;
   }
-  ${({ $isOpen }) =>
-    $isOpen &&
-    `
-      transform: translate(20px, 20px);
-      & > span {
-        opacity: 1;
-      }
-  `}
   &:focus-visible {
     transform: translate(20px, 20px);
     background: rgba(229, 206, 175, 0.6);
@@ -130,6 +119,13 @@ const ButtonOpenLayer = styled.button<{ $isOpen: boolean }>`
     & > span {
       opacity: 1;
     }
+  }
+  & > span {
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(0, 149, 255, 0.9);
   }
 `;
 const Link = styled.a`
@@ -377,10 +373,8 @@ const CardContainer = styled.div`
   }
   &:hover {
     ${ButtonOpenLayer} {
-      transform: translate(20px, 20px);
+      transform: translate(10px, 10px);
       background: rgba(229, 206, 175, 0.6);
-      transform-origin: bottom right;
-      animation: swing 2s ease infinite;
       & > span {
         opacity: 1;
       }

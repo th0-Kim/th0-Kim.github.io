@@ -8,7 +8,17 @@ const Footer: React.FC = () => {
       <ButtonTop
         type="button"
         onClick={() => {
+          const body = document.body;
+          if (body) {
+            body.setAttribute("tabIndex", "0");
+            body.focus();
+          }
           window.scrollTo({ top: 0, behavior: "smooth" });
+          setTimeout(() => {
+            if (body) {
+              body.removeAttribute("tabIndex");
+            }
+          }, 1000);
         }}
       >
         go to top
