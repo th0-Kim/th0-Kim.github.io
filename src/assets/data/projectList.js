@@ -47,10 +47,10 @@ export let projectData = [
   {
     highlight: false,
     year: "2024",
-    period: "2024.04.01 ~ 2024.08.31",
+    period: "2024.04.01 ~ 2024.11.06",
     image: "publImg.jpg",
     company: "LG전자",
-    name: "마이크로사이트 [진행중]",
+    name: "마이크로사이트 [오픈 준비중]",
     skills: [
       {
         color: "type_lang",
