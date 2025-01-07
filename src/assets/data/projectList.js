@@ -246,7 +246,7 @@ export let projectData = [
     skills: [
       {
         color: "type_lang",
-        skillName: ["VanilaJS", "jQuery", "HTML", "GulpGulp"],
+        skillName: ["VanilaJS", "jQuery", "HTML", "Gulp"],
       },
       {
         color: "type_style",

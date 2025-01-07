@@ -22,6 +22,7 @@ const Header: React.FC = () => {
       <MyName>
         <span>{mainTitle.label}</span>
         <MyNameTitle>{mainTitle.title}</MyNameTitle>
+        <MyNamesubTitle>{mainTitle.subTitle}</MyNamesubTitle>
       </MyName>
       <MySkillTree>
         <SkillDl>
@@ -59,6 +60,13 @@ const Header: React.FC = () => {
     </HeaderContainer>
   );
 };
+
+const MyNamesubTitle = styled.strong`
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(var(--main_header), 0.6);
+  line-height: 1.3;
+`;
 
 const MyNameTitle = styled.strong`
   opacity: 0.6;
@@ -136,6 +144,7 @@ const HeaderContainer = styled.header`
 const mainTitle = {
   label: "PORTFOLIO",
   title: "WEB UI Developer, \nKim So Young",
+  subTitle: "경력 7년 11개월",
 };
 const arrSkills = [
   "HTML5",
