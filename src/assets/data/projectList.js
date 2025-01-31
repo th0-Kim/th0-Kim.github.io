@@ -4,7 +4,7 @@ export let projectData = [
   //   highlight: false,
   //   year: "2024",
   //   period: "작업 기간",
-  //   image: "publImg.jpg",
+  //   image: "publImg.webp",
   //   company: "LG전자",
   //   name: "프로젝트 이름",
   //   skills: [
@@ -48,7 +48,7 @@ export let projectData = [
     highlight: false,
     year: "2024",
     period: "2024.04.01 ~ 2024.11.06",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "LG전자",
     name: "마이크로사이트 [오픈 준비중]",
     skills: [
@@ -89,7 +89,7 @@ export let projectData = [
     highlight: false,
     year: "2024",
     period: "2023.12.11 ~ 2024.06.11",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "LG전자",
     name: "북미향 ESS Installer용 Web App 개발",
     skills: [
@@ -133,7 +133,7 @@ export let projectData = [
     highlight: true,
     year: "2023",
     period: "2023.06.05 ~ 2023.08.30",
-    image: "publImg33.jpg",
+    image: "publImg33.webp",
     company: "현대차",
     name: "수소 상용 글로벌 홍보 웹 개선",
     skills: [
@@ -193,7 +193,7 @@ export let projectData = [
     highlight: true,
     year: "2023",
     period: "2023.04.25 ~ 2023.08.11",
-    image: "publImg32.jpg",
+    image: "publImg32.webp",
     company: "42dot",
     name: "웹 사이트 리뉴얼",
     skills: [
@@ -240,7 +240,7 @@ export let projectData = [
     highlight: true,
     year: "2023",
     period: "2023.03.02 ~ 2024.02.29",
-    image: "publImg30.jpg",
+    image: "publImg30.webp",
     company: "KT",
     name: "마이알뜰폰(MVNO) 고객 대통합 채널 운영",
     skills: [
@@ -287,7 +287,7 @@ export let projectData = [
     highlight: true,
     year: "2023",
     period: "2023.02.13 ~ 2023.09.30",
-    image: "publImg34.jpg",
+    image: "publImg34.webp",
     company: "LG전자",
     name: "ShopTime TV/모바일앱 고도화",
     skills: [
@@ -341,7 +341,7 @@ export let projectData = [
     highlight: false,
     year: "2022",
     period: "2022.11.28 ~	2023.02.28",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "현대오토에버",
     name: "디자인 시스템 구축 프로젝트",
     skills: [
@@ -381,7 +381,7 @@ export let projectData = [
     highlight: true,
     year: "2022",
     period: "2022.02.10 ~ 2023.02.28",
-    image: "publImg28.jpg",
+    image: "publImg28.webp",
     company: "KT",
     name: "MVNO 고객 대통합 채널 구축",
     skills: [
@@ -435,7 +435,7 @@ export let projectData = [
     highlight: false,
     year: "2022",
     period: "2022.01.17 ~ 2022.02.28",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "LG전자",
     name: "ThinQ Taste 서비스 프로젝트",
     skills: [
@@ -475,7 +475,7 @@ export let projectData = [
     highlight: false,
     year: "2022",
     period: "2021.12.08 ~ 2022.02.25",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "LGU+",
     name: "UX DP 가이드 퍼블리싱 프로젝트",
     skills: [
@@ -515,7 +515,7 @@ export let projectData = [
     highlight: false,
     year: "2021",
     period: "2021.09.14 ~ 2022.12.10",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "Btv",
     name: "VCS 5.3.0 고도화",
     skills: [
@@ -555,7 +555,7 @@ export let projectData = [
     highlight: true,
     year: "2021",
     period: "2021.05.10 ~ 2021.12.23",
-    image: "publImg25.jpg",
+    image: "publImg25.webp",
     company: "LG전자",
     name: "LG WebOs Sinage 웹접근성 리뉴얼",
     skills: [
@@ -612,7 +612,7 @@ export let projectData = [
     highlight: false,
     year: "2021",
     period: "2021.03.31 ~ 2021.04.31",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "KT",
     name: "가족 안심안전 서비스 구축",
     skills: [
@@ -652,7 +652,7 @@ export let projectData = [
     highlight: false,
     year: "2021",
     period: "2021.03.17 ~ 2021.06.30",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "LGU+",
     name: "그래픽모티프 디지털 어플리케이션 개발",
     skills: [
@@ -692,7 +692,7 @@ export let projectData = [
     highlight: false,
     year: "2021",
     period: "2021.03.02 ~ 2021.04.30",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "LG전자",
     name: "채널 모바일 앱",
     skills: [
@@ -732,7 +732,7 @@ export let projectData = [
     highlight: false,
     year: "2020",
     period: "2020.11.26 ~ 2021.01.15",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "SKC&C",
     name: "JD 플랫폼 구축",
     skills: [
@@ -772,7 +772,7 @@ export let projectData = [
     highlight: false,
     year: "2020",
     period: "2020.10.19 ~ 2020.11.16",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "LG전자",
     name: "SIGNATURE 키친 스위트 청담 쇼룸 개편",
     skills: [
@@ -812,7 +812,7 @@ export let projectData = [
     highlight: false,
     year: "2021",
     period: "2020.10.12 ~ 2021.07.14",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "SK브로드밴드",
     name: "Mobile B tv 이벤트 연간 운영",
     skills: [
@@ -852,7 +852,7 @@ export let projectData = [
     highlight: false,
     year: "2020",
     period: "2020.08 ~ 2020.09",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "SGI 서울보증보험",
     name: "고객부가서비스",
     skills: [
@@ -888,7 +888,7 @@ export let projectData = [
     highlight: false,
     year: "2020",
     period: "2020.07",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "SGI 서울보증보험",
     name: "비대면채널 고도화",
     skills: [
@@ -924,7 +924,7 @@ export let projectData = [
     highlight: false,
     year: "2020",
     period: "2020.04 ~ 2020.06",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "신한은행",
     name: "기업용 모바일앱 개편",
     skills: [
@@ -968,7 +968,7 @@ export let projectData = [
     highlight: false,
     year: "2019",
     period: "2019.11 ~ 2019.12",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "삼성SDS",
     name: "인력개발원 교육지원시스템",
     skills: [
@@ -1008,7 +1008,7 @@ export let projectData = [
     highlight: false,
     year: "2019",
     period: "2019.07 ~ 2019.10",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "신한은행",
     name: "혁신성장 창업플랫폼 INNOTALK",
     skills: [
@@ -1048,7 +1048,7 @@ export let projectData = [
     highlight: false,
     year: "2019",
     period: "2019.01 ~ 2019.05",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "기업은행",
     name: "IBX Box platform - Admin",
     skills: [
@@ -1088,7 +1088,7 @@ export let projectData = [
     highlight: false,
     year: "2018",
     period: "2018.12",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "한화생명",
     name: "온슈어 채널활성화(상품)",
     skills: [
@@ -1128,7 +1128,7 @@ export let projectData = [
     highlight: false,
     year: "2018",
     period: "2018.09 ~ 2018.11",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "삼성SDS",
     name: "edutto 개선",
     skills: [
@@ -1164,7 +1164,7 @@ export let projectData = [
     highlight: false,
     year: "2018",
     period: "2018.06 ~ 2018.08",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "삼성물산",
     name: "홈페이지 리뉴얼",
     skills: [
@@ -1204,7 +1204,7 @@ export let projectData = [
     highlight: false,
     year: "2018",
     period: "2018.04 ~ 2018.05",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "Wiseuser",
     name: "메인 개편",
     skills: [
@@ -1248,7 +1248,7 @@ export let projectData = [
     highlight: false,
     year: "2018",
     period: "2018.01 ~ 2018.04",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "KAIT 자격검정",
     name: "홈페이지 리뉴얼",
     skills: [
@@ -1288,7 +1288,7 @@ export let projectData = [
     highlight: false,
     year: "2018",
     period: "2017.11 ~ 2018.04",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "중앙자살예방센터",
     name: "통계 분석 시스템",
     skills: [
@@ -1328,7 +1328,7 @@ export let projectData = [
     highlight: false,
     year: "2017",
     period: "2017.09 ~ 2018.01",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "할렐루야교회",
     name: "홈페이지 리뉴얼",
     skills: [
@@ -1368,7 +1368,7 @@ export let projectData = [
     highlight: false,
     year: "2017",
     period: "2017.07 ~ 2017.08",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "CAFE24 - 6종",
     name: "템플릿 제작",
     skills: [
@@ -1404,7 +1404,7 @@ export let projectData = [
     highlight: false,
     year: "2017",
     period: "2017.04 ~ 2017.06",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "OCEAN C&C, EAST CONTROL, MTEC Grobal",
     name: "스타트업 홈페이지 지원 사업",
     skills: [
@@ -1444,7 +1444,7 @@ export let projectData = [
     highlight: false,
     year: "2017",
     period: "2017.01 ~ 2017.04",
-    image: "publImg.jpg",
+    image: "publImg.webp",
     company: "Krace 경륜·경정",
     name: "홈페이지 리뉴얼",
     skills: [

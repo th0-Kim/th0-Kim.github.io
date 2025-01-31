@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import styled from "styled-components";
 
 //images
-import LinkIcon from "assets/images/icon_link.png";
-import LinkIconDisabled from "assets/images/icon_link_no.png";
+import LinkIcon from "assets/images/icon_link.webp";
+import LinkIconDisabled from "assets/images/icon_link_no.webp";
 
 interface Skill {
   color: string;
