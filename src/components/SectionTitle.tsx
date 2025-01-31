@@ -9,11 +9,11 @@ const SectionTitle: React.FC<Props> = ({ className, title }) => {
 };
 
 const SectionTitleBox = styled.h2`
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   @media screen and (max-width: 1400px) {
-    padding: 0 20px;
+    padding: 0 2rem;
   }
 `;
 

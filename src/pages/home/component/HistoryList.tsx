@@ -119,9 +119,9 @@ const SectionTab = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 0 20px;
-  margin-bottom: 50px;
+  gap: 1rem;
+  padding: 0 2rem;
+  margin-bottom: 5rem;
   transition: opacity 1s;
   ${Tab} {
     flex-shrink: 0;
@@ -140,7 +140,7 @@ const List = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 2rem;
   ${Row} {
     width: 100%;
   }
@@ -151,16 +151,16 @@ const List = styled.div`
     }
   }
   @media screen and (max-width: 1400px) {
-    padding: 0 20px;
+    padding: 0 2rem;
   }
   @media screen and (min-width: 1024px) {
     ${Row} {
-      width: calc(50% - 14px);
+      width: calc(50% - 1.4rem);
     }
   }
 `;
 const ProjectListContainer = styled.div`
-  min-height: 800px;
+  min-height: 80rem;
 `;
 
 const tabButtons = [

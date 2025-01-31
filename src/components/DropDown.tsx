@@ -125,7 +125,7 @@ const DropDownBox = styled.div`
     .dropdown {
       &-button {
         border: 1px solid #0f0f0f;
-        border-radius: 8px 8px 0 0;
+        border-radius: 0.8em 0.8em 0 0;
       }
       &-arrow {
         transform: rotate(180deg) translateY(50%);
@@ -173,7 +173,7 @@ const DropDownBox = styled.div`
       height: 4rem;
       background-color: #ffffff;
       border: 1px solid #dddddd;
-      border-radius: 8px;
+      border-radius: 0.8em;
       box-sizing: border-box;
       button {
         display: block;
@@ -195,7 +195,7 @@ const DropDownBox = styled.div`
       height: 1.6rem;
       transform: translateY(-50%);
       svg {
-        width: 9.8px;
+        width: 0.98rem;
         height: auto;
       }
     }
@@ -213,7 +213,7 @@ const DropDownBox = styled.div`
       border-top: 1px solid #dddddd;
       background-color: #ffffff;
       box-sizing: border-box;
-      border-radius: 0 0 8px 8px;
+      border-radius: 0 0 0.8em 0.8em;
       li {
         &.selected {
           button {

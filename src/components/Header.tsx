@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       <MyName>
         <span>{mainTitle.label}</span>
         <MyNameTitle>{mainTitle.title}</MyNameTitle>
-        <MyNamesubTitle>{mainTitle.subTitle}</MyNamesubTitle>
+        <MyNameSubTitle>{mainTitle.subTitle}</MyNameSubTitle>
       </MyName>
       <MySkillTree>
         <SkillDl>
@@ -61,8 +61,8 @@ const Header: React.FC = () => {
   );
 };
 
-const MyNamesubTitle = styled.strong`
-  font-size: 18px;
+const MyNameSubTitle = styled.strong`
+  font-size: 1.8rem;
   font-weight: bold;
   color: rgba(var(--main_header), 0.6);
   line-height: 1.3;
@@ -70,7 +70,7 @@ const MyNamesubTitle = styled.strong`
 
 const MyNameTitle = styled.strong`
   opacity: 0.6;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: bold;
   color: rgba(var(--main_header), 0.6);
   line-height: 1.3;
@@ -82,9 +82,9 @@ const MyNameTitle = styled.strong`
 const MyName = styled.h1`
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 5rem;
   & > span {
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 600;
     color: rgba(var(--main_header), 0.8);
     line-height: 1.2;
@@ -94,7 +94,7 @@ const MyName = styled.h1`
 // const MenuList = styled.ul``;
 // const Menu = styled.nav``;
 const SkillDl = styled.dl`
-  font-size: 16px;
+  font-size: 1.6rem;
   dt {
     font-weight: bold;
     color: var(--color_555555);
@@ -121,22 +121,22 @@ const SkillDl = styled.dl`
 const MySkillTree = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 1380px;
-  padding: 0 16px;
-  margin: 50px auto 0;
-  padding: 20px;
-  border-radius: 8px;
+  gap: 2rem;
+  max-width: 138rem;
+  padding: 0 1.6rem;
+  margin: 5rem auto 0;
+  padding: 2rem;
+  border-radius: 0.8rem;
   background-color: rgba(var(--skill_tree_bg), 0.1);
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 1.4;
 `;
 const HeaderContainer = styled.header`
-  max-width: 1380px;
+  max-width: 138rem;
   margin: 0 auto;
   @media screen and (max-width: 1400px) {
-    padding: 0 20px;
+    padding: 0 2rem;
   }
 `;
 

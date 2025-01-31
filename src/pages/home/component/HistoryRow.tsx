@@ -73,8 +73,8 @@ const HistoryRow: React.FC<Props> = ({
 const RowLeft = styled.strong`
   flex-shrink: 0;
   flex: 1;
-  max-width: 80px;
-  margin-right: 10px;
+  max-width: 8rem;
+  margin-right: 1rem;
 `;
 const RowRight = styled.div`
   flex: 1;
@@ -104,7 +104,7 @@ const SkillBox = styled.div`
 `;
 const RowName = styled.strong`
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
   font-weight: normal;
   ${RowLeft} {
     color: rgba(var(--color_list_dim), 0.7);
@@ -113,21 +113,21 @@ const RowName = styled.strong`
 const RowContentUl = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.8rem;
 `;
 const RowContainer = styled.div`
   position: relative;
   opacity: 0;
-  bottom: -20px;
-  padding: 20px;
-  border-radius: 8px;
-  font-size: 16px;
+  bottom: -2rem;
+  padding: 2rem;
+  border-radius: 0.8em;
+  font-size: 1.6rem;
   font-weight: normal;
   line-height: 1.4;
   word-break: keep-all;
   border: 1px solid var(--color_dddddd);
   background-color: var(--color_white);
-  box-shadow: 0 4px 10px 0 var(--color_dddddd);
+  box-shadow: 0 0.4rem 1rem 0 var(--color_dddddd);
   box-sizing: border-box;
   &:last-child {
     border-bottom: none;

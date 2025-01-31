@@ -101,18 +101,18 @@ const ButtonOpenLayer = styled.button<{ $isOpen: boolean }>`
   z-index: 3;
   right: 0;
   bottom: 0;
-  width: 70px;
-  height: 70px;
-  border-radius: 80px;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 8em;
   background: rgba(255, 255, 255, 0.6);
   transition: all 0.5s;
-  transform: translate(40px, 40px);
+  transform: translate(4rem, 4rem);
   &:hover {
     transform-origin: bottom right;
     animation: swing 2s ease infinite;
   }
   &:focus-visible {
-    transform: translate(20px, 20px);
+    transform: translate(2rem, 2rem);
     background: rgba(229, 206, 175, 0.6);
     transform-origin: bottom right;
     animation: swing 2s ease infinite;
@@ -122,7 +122,7 @@ const ButtonOpenLayer = styled.button<{ $isOpen: boolean }>`
   }
   & > span {
     opacity: 0;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
     color: rgba(0, 149, 255, 0.9);
@@ -132,7 +132,7 @@ const Link = styled.a`
   position: relative;
   display: inline-flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.4;
   &:before {
@@ -140,13 +140,13 @@ const Link = styled.a`
     display: block;
     position: relative;
     z-index: 1;
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.5rem;
     background-image: url(${LinkIcon});
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 16px auto;
+    background-size: 1.6rem auto;
   }
   &:after {
     content: "";
@@ -154,7 +154,7 @@ const Link = styled.a`
     top: 0;
     left: 0;
     z-index: 0;
-    width: 1px;
+    width: 0.1rem;
     height: 100%;
     transition: width 0.5s;
   }
@@ -172,7 +172,7 @@ const Link = styled.a`
 const NoneLink = styled.span`
   display: inline-flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.4;
   &:before {
@@ -180,13 +180,13 @@ const NoneLink = styled.span`
     display: block;
     position: relative;
     z-index: 1;
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.5rem;
     background-image: url(${LinkIconDisabled});
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 16px auto;
+    background-size: 1.6rem auto;
   }
   &:hover {
     text-decoration: line-through;
@@ -195,10 +195,10 @@ const NoneLink = styled.span`
 `;
 
 const ProjectContribution = styled.ol`
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   & > li {
     display: inline-flex;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
     color: var(--color_black);
@@ -206,11 +206,11 @@ const ProjectContribution = styled.ol`
       content: "";
       display: block;
       flex-shrink: 0;
-      width: 4px;
-      height: 4px;
-      margin-top: 10px;
-      margin-right: 10px;
-      border-radius: 4px;
+      width: 0.4rem;
+      height: 0.4rem;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      border-radius: 0.4em;
       background-color: var(--color_black);
     }
   }
@@ -218,16 +218,16 @@ const ProjectContribution = styled.ol`
 
 const ProjectIntroduce = styled.strong`
   display: block;
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.4;
   color: var(--color_black);
 `;
 const ProjectSubscript = styled.div`
-  min-height: 40px;
-  margin-bottom: 14px;
-  font-size: 16px;
+  min-height: 4rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.4;
   color: var(--color_black);
@@ -238,17 +238,17 @@ const ProjectLabelBox = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: -5px;
+  margin: -0.5rem;
 `;
 const ProjectLabel = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25px;
-  padding: 0 6px;
-  margin: 5px;
-  border-radius: 3px;
-  font-size: 14px;
+  height: 2.5rem;
+  padding: 0 0.6rem;
+  margin: 0.5rem;
+  border-radius: 0.3em;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.4;
   color: var(--color_white);
@@ -274,9 +274,9 @@ const ProjectLabel = styled.span`
 `;
 const ProjectName = styled.h2`
   display: block;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.4;
 `;
@@ -295,7 +295,7 @@ const CardLayerDim = styled.div<{ $isOpen: boolean }>`
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(3px);
-  border-radius: 8px;
+  border-radius: 0.8em;
   box-sizing: border-box;
   border: ${({ $isOpen }) =>
     $isOpen ? "1px solid rgba(0, 149, 255, 0.49)" : "none"};
@@ -304,12 +304,12 @@ const CardLayerDim = styled.div<{ $isOpen: boolean }>`
   & > div {
     overflow-y: auto;
     height: 100%;
-    padding: 20px;
+    padding: 2rem;
   }
 `;
 
 const CardHead = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 `;
 
 const CardContents = styled.div`
@@ -323,24 +323,24 @@ const CardThumb = styled.div`
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0.8em;
   background-color: var(--color_white);
   border: 1px solid rgba(0, 149, 255, 0.49);
   text-align: center;
   box-sizing: border-box;
   .label-company {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 1rem;
+    left: 1rem;
     z-index: 1;
     display: flex;
     align-items: center;
-    height: 20px;
-    padding: 0 8px;
-    border-radius: 20px;
+    height: 2rem;
+    padding: 0 0.8rem;
+    border-radius: 2em;
     backdrop-filter: blur(6px);
     background-color: rgba(112, 110, 110, 0.3);
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 1;
     color: var(--color_white);
@@ -356,15 +356,15 @@ const CardContainer = styled.div`
   opacity: 0;
   overflow: hidden;
   position: relative;
-  right: -20px;
+  right: -2rem;
   display: flex;
   flex-direction: column;
   word-break: keep-all;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 1rem;
+  border-radius: 0.8em;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(4.5px);
-  box-shadow: 0 8px 32px 0 rgba(var(--color_shadow), 0.37);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(var(--color_shadow), 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
   transition: background 0.5s ease, right 0.5s ease, bottom 0.5s ease;
   &.active {
@@ -373,14 +373,14 @@ const CardContainer = styled.div`
   }
   &:hover {
     ${ButtonOpenLayer} {
-      transform: translate(10px, 10px);
+      transform: translate(1rem, 1rem);
       background: rgba(229, 206, 175, 0.6);
       & > span {
         opacity: 1;
       }
     }
     ::-webkit-scrollbar {
-      width: 7px;
+      width: 0.7rem;
       transition: width 0.5s;
     }
   }

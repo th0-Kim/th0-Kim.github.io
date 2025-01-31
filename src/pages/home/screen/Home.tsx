@@ -6,15 +6,6 @@ import Footer from "components/Footer";
 import ProjectList from "pages/home/component/ProjectList";
 import HistoryList from "pages/home/component/HistoryList";
 
-const Main = styled.main`
-  display: flex;
-  flex-direction: column;
-  max-width: 1380px;
-  gap: 100px;
-  margin: 100px auto 160px;
-`;
-const HomeContainer = styled.div``;
-
 const Home: React.FC = () => {
   return (
     <HomeContainer>
@@ -27,5 +18,14 @@ const Home: React.FC = () => {
     </HomeContainer>
   );
 };
+
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  max-width: 138rem;
+  gap: 10rem;
+  margin: 10rem auto 16rem;
+`;
+const HomeContainer = styled.div``;
 
 export default Home;

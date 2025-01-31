@@ -27,11 +27,11 @@ const TabButton: React.FC<Props> = ({
 };
 
 const Button = styled.button`
-  padding: 4px 10px;
+  padding: 0.4rem 1rem;
   background-color: var(--color_white);
   border: 1px solid var(--color_dddddd);
-  border-radius: 20px;
-  font-size: 15px;
+  border-radius: 2em;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.4;
   color: var(--color_black);

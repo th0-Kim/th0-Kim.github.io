@@ -104,25 +104,25 @@ const ProjectListInner = styled.div`
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 40px 20px;
+  gap: 2rem;
+  padding: 4rem 2rem;
   transition: all 0.5s;
   &.active {
     background-color: rgba(var(--color_list_dim), 0.5);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.2);
   }
   @media screen and (min-width: 1400px) {
-    border-radius: 12px;
+    border-radius: 1.2em;
   }
   @media screen and (min-width: 1024px) {
-    gap: 40px;
+    gap: 4rem;
   }
 `;
 
 const ProjectListContainer = styled.div``;
 
 const BeforeScroll = styled.div`
-  height: 800px;
+  height: 80rem;
   background: linear-gradient(
     0.25turn,
     rgba(var(--skill_tree_bg), 0.2),
@@ -130,10 +130,10 @@ const BeforeScroll = styled.div`
     rgba(var(--skill_tree_bg), 0.2),
     rgba(var(--skill_tree_bg), 0.1)
   );
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.2);
 
   @media screen and (min-width: 1400px) {
-    border-radius: 12px;
+    border-radius: 1.2em;
   }
 `;
 
