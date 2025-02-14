@@ -10,7 +10,7 @@ export let projectData = [
   //   skills: [
   //     {
   //       color: "type_lang",
-  //       skillName: ["React", "Vue", "Javascript", "HTML", "jQuery", "Gulp"],
+  //       skillName: ["React", "Vue", "Javascript", "HTML", "Gulp"],
   //     },
   //     {
   //       color: "type_style",
@@ -18,11 +18,11 @@ export let projectData = [
   //     },
   //     {
   //       color: "type_tool",
-  //       skillName: ["VSCODE", "JIRA", "Eclipse", "eXbulider6"],
+  //       skillName: ["VSCODE", "JIRA"],
   //     },
   //     {
   //       color: "label_gui",
-  //       skillName: ["Figma", "Photoshop", "Zeplin"],
+  //       skillName: ["Figma", "Zeplin"],
   //     },
   //     {
   //       color: "type_vcs",
@@ -49,8 +49,8 @@ export let projectData = [
     year: "2024",
     period: "2024.04.01 ~ 2024.11.06",
     image: "publImg.webp",
-    company: "LG전자",
-    name: "마이크로사이트 [오픈 준비중]",
+    company: "[오픈 준비중] LG전자",
+    name: "마이크로사이트",
     skills: [
       {
         color: "type_lang",
@@ -124,6 +124,86 @@ export let projectData = [
       },
       {
         list: "리눅스 기반의 ESS 장비 웹서버(시뮬레이션 보드) 및 하이브리드앱 연동을 활용한 기기 상태 설정 테스트",
+      },
+    ],
+    url: null,
+  },
+  // 디지털자산센터플랫폼 구축
+  {
+    highlight: false,
+    year: "2024",
+    period: "2024.06.09 ~ 2024.10.11",
+    image: "publImg.webp",
+    company: "[업무 지원] 현대오토에버",
+    name: "디지털자산센터플랫폼 구축",
+    skills: [
+      {
+        color: "type_lang",
+        skillName: ["Javascript", "HTML", "Gulp"],
+      },
+      {
+        color: "type_style",
+        skillName: ["SCSS", "CSS"],
+      },
+      {
+        color: "type_tool",
+        skillName: ["VSCODE"],
+      },
+      {
+        color: "label_gui",
+        skillName: ["Figma"],
+      },
+      {
+        color: "type_vcs",
+        skillName: ["GitLab"],
+      },
+    ],
+    kind: "PC웹",
+    rate: "20%/3인 투입",
+    subscript: "",
+    contribution: [
+      {
+        list: "",
+      },
+    ],
+    url: null,
+  },
+  // 차량관제시스템 리뉴얼 프로젝트
+  {
+    highlight: false,
+    year: "2024",
+    period: "2025.10.07 ~	2025.11.06",
+    image: "publImg.webp",
+    company: "[업무 지원] 삼성에스원",
+    name: "차량관제시스템 리뉴얼",
+    skills: [
+      {
+        color: "type_lang",
+        skillName: ["Javascript", "HTML", "Gulp"],
+      },
+      {
+        color: "type_style",
+        skillName: ["SCSS", "CSS"],
+      },
+      {
+        color: "type_tool",
+        skillName: ["VSCODE", "Slack"],
+      },
+      {
+        color: "label_gui",
+        skillName: ["Figma"],
+      },
+      {
+        color: "type_vcs",
+        skillName: ["GitLab"],
+      },
+    ],
+    kind: "반응형 웹, 웹 앱",
+    rate: "20%/3인 투입",
+    subscript: "",
+    contribution: [
+      {
+        list: "",
       },
     ],
     url: null,

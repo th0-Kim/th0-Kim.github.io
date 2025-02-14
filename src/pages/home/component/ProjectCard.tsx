@@ -46,17 +46,28 @@ const ProjectCard: React.FC<Props> = ({
       <CardContents>
         <CardHead>
           <ProjectName>{name}</ProjectName>
-          <ProjectLabelBox>
-            {skills.map((skill, skillIndex) =>
-              skill.skillName.map((name, nameIndex) => (
-                <ProjectLabel
-                  className={skill.color}
-                  key={`${skillIndex}-${nameIndex}`}
-                >
-                  {name}
-                </ProjectLabel>
-              ))
+          <ProjectLink>
+            {url && url !== null ? (
+              <Link href={url} target="_blank">
+                <span>이동하기</span>
+              </Link>
+            ) : (
+              <NoneLink>이동불가</NoneLink>
             )}
+          </ProjectLink>
+          <ProjectLabelBox>
+            <ProjectLabelInner>
+              {skills.map((skill, skillIndex) =>
+                skill.skillName.map((name, nameIndex) => (
+                  <ProjectLabel
+                    className={skill.color}
+                    key={`${skillIndex}-${nameIndex}`}
+                  >
+                    {name}
+                  </ProjectLabel>
+                ))
+              )}
+            </ProjectLabelInner>
           </ProjectLabelBox>
         </CardHead>
       </CardContents>
@@ -79,22 +90,15 @@ const ProjectCard: React.FC<Props> = ({
                 <li key={index.toString()}>{cont.list}</li>
               ))}
           </ProjectContribution>
-          {isOpen && (
-            <>
-              {url && url !== null ? (
-                <Link href={url} target="_blank">
-                  <span>이동하기</span>
-                </Link>
-              ) : (
-                <NoneLink>이동불가</NoneLink>
-              )}
-            </>
-          )}
         </div>
       </CardLayerDim>
     </CardContainer>
   );
 };
+
+const ProjectLink = styled.div`
+  margin-top: 0.5rem;
+`;
 
 const ButtonOpenLayer = styled.button<{ $isOpen: boolean }>`
   position: absolute;
@@ -233,13 +237,6 @@ const ProjectSubscript = styled.div`
   color: var(--color_black);
 `;
 
-const ProjectLabelBox = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin: -0.5rem;
-`;
 const ProjectLabel = styled.span`
   display: flex;
   justify-content: center;
@@ -272,10 +269,20 @@ const ProjectLabel = styled.span`
     background-color: rgba(var(--color_c47ee4), 0.4);
   }
 `;
+const ProjectLabelInner = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+`;
+
+const ProjectLabelBox = styled.div`
+  margin-top: 0.5rem;
+`;
 const ProjectName = styled.h2`
   display: block;
   margin-top: 2rem;
-  margin-bottom: 1rem;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.4;
