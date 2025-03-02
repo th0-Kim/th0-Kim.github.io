@@ -1,0 +1,30 @@
+name: Deploy React to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # main 브랜치에 push하면 실행
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 코드 체크아웃
+        uses: actions/checkout@v3
+
+      - name: 🏗️ Node.js 설치
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📦 의존성 설치
+        run: npm install
+
+      - name: 🏗️ 빌드 실행
+        run: npm run build
+
+      - name: 🚀 GitHub Pages에 배포
+        run: npm run deploy
+        env:
+          CI: true
