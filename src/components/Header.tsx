@@ -4,19 +4,22 @@ import styled from "styled-components";
 import { handleArrayActive } from "modules/arrayActive";
 
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    // 사용 기술 폰트 이벤트
-    const skillList = document.querySelector(
-      ".skill-list"
-    ) as HTMLElement | null;
-    handleArrayActive(skillList, "span", 150);
+    const skillDlItems = [
+      { selector: ".skill-list", delay: 150 },
+      { selector: ".env-list", delay: 175 },
+      { selector: ".design-list", delay: 200 },
+      { selector: ".tool-list", delay: 225 },
+    ];
 
-    // 업무 환경 폰트 이벤트
-    const envList = document.querySelector(".env-list") as HTMLElement | null;
-    handleArrayActive(envList, "span", 175);
+    skillDlItems.forEach(({ selector, delay }) => {
+      const item = document.querySelector(selector) as HTMLElement | null;
+      handleArrayActive(item, "span", delay);
+    });
   }, []);
+
   return (
     <HeaderContainer>
       <MyName>
@@ -34,9 +37,25 @@ const Header: React.FC = () => {
           </dd>
         </SkillDl>
         <SkillDl>
-          <dt>업무 환경</dt>
+          <dt>개발 환경</dt>
           <dd className="env-list">
             {arrEnvs.map((env, index) => (
+              <span key={index.toString()}>{env}</span>
+            ))}
+          </dd>
+        </SkillDl>
+        <SkillDl>
+          <dt>UI/UX 최적화 기술</dt>
+          <dd className="tool-list">
+            {arrTool.map((env, index) => (
+              <span key={index.toString()}>{env}</span>
+            ))}
+          </dd>
+        </SkillDl>
+        <SkillDl>
+          <dt>디자인 도구</dt>
+          <dd className="design-list">
+            {arrDesign.map((env, index) => (
               <span key={index.toString()}>{env}</span>
             ))}
           </dd>
@@ -149,32 +168,40 @@ const mainTitle = {
 const arrSkills = [
   "HTML5",
   "CSS3",
-  "SASS",
-  "React",
-  "JavaScript",
+  "SCSS",
+  "VanillaJS(DOM API)",
   "jQuery",
   "Gulp",
+  "React",
   "Vue",
-  "웹접근성",
-  "웹표준",
-  "SEO",
-  "GSAP",
   "Lottie",
+  "GSAP",
 ];
 const arrEnvs = [
+  "Visual Studio Code",
+  "Eclipse",
   "GitLab",
   "Jira",
+  "Slack",
   "Confluence",
   "SVN",
   "CVS",
   "FTP",
-  "Figma",
-  "Zeplin",
-  "Photoshop",
-  "Visual Studio Code",
-  "Eclipse",
-  "센스리더",
   "Notion",
+];
+const arrDesign = ["Figma", "Zeplin", "Photoshop"];
+const arrTool = [
+  "웹접근성",
+  "앱접근성",
+  "웹 표준",
+  "SEO 최적화",
+  "반응형 웹",
+  "웹 앱",
+  "센스리더",
+  "VoiceOver",
+  "NVDA",
+  "W3C 웹 표준 검사",
+  "Lighthouse",
 ];
 
 export default Header;
