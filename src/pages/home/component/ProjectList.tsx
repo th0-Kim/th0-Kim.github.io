@@ -23,6 +23,7 @@ const Card = styled(ProjectCard)`
   }
 `;
 const projectMap: JSX.Element[] = projectData
+  .sort((a, b) => (a.sort ?? 0) - (b.sort ?? 0))
   .map((item, index) =>
     item.highlight ? (
       <Card

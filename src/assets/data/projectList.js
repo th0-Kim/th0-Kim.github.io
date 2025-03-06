@@ -211,6 +211,7 @@ export let projectData = [
   // 현대 수소 상용
   {
     highlight: true,
+    sort: 5,
     year: "2023",
     period: "2023.06.05 ~ 2023.08.30",
     image: "publImg33.webp",
@@ -271,6 +272,7 @@ export let projectData = [
   // 42dot
   {
     highlight: true,
+    sort: 4,
     year: "2023",
     period: "2023.04.25 ~ 2023.08.11",
     image: "publImg32.webp",
@@ -318,6 +320,7 @@ export let projectData = [
   // KT 마이알뜰폰 MVNO 1년 운영
   {
     highlight: true,
+    sort: 1,
     year: "2023",
     period: "2023.03.02 ~ 2024.02.29",
     image: "publImg30.webp",
@@ -365,6 +368,7 @@ export let projectData = [
   // LG shop time
   {
     highlight: true,
+    sort: 2,
     year: "2023",
     period: "2023.02.13 ~ 2023.09.30",
     image: "publImg34.webp",
@@ -459,6 +463,7 @@ export let projectData = [
   // KT MVNO 고객 대통합 채널 구축
   {
     highlight: true,
+    sort: 0,
     year: "2022",
     period: "2022.02.10 ~ 2023.02.28",
     image: "publImg28.webp",
@@ -633,6 +638,7 @@ export let projectData = [
   // LG WebOs Sinage 웹접근성 리뉴얼
   {
     highlight: true,
+    sort: 3,
     year: "2021",
     period: "2021.05.10 ~ 2021.12.23",
     image: "publImg25.webp",
