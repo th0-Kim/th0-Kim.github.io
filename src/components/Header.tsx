@@ -172,7 +172,7 @@ const arrSkills = [
   "VanillaJS(DOM API)",
   "jQuery",
   "Gulp",
-  "React",
+  "React(CSS-in-JS)",
   "Vue",
   "Lottie",
   "GSAP",
