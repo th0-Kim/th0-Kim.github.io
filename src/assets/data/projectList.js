@@ -599,7 +599,7 @@ export let projectData = [
   {
     highlight: false,
     year: "2021",
-    period: "2021.09.14 ~ 2022.12.10",
+    period: "2021.09.14 ~ 2021.12.10",
     image: "publImg.webp",
     company: "Btv",
     name: "VCS 5.3.0 고도화",
