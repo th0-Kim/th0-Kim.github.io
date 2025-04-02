@@ -16,7 +16,7 @@ const BottomArrow: React.FC = () => {
         domArrowArea.classList.remove("normal");
         domArrowArea.classList.remove("bottom");
         domArrowArea.classList.add("top");
-      } else if (scrollTop === 0) {
+      } else if (scrollTop < 30) {
         domArrowArea.classList.remove("bottom");
         domArrowArea.classList.remove("top");
         domArrowArea.classList.add("normal");
