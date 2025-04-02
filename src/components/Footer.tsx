@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import BottomArrow from "components/BottomArrow";
+
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
@@ -23,6 +25,7 @@ const Footer: React.FC = () => {
       >
         go to top
       </ButtonTop>
+      <BottomArrow />
     </FooterContainer>
   );
 };
