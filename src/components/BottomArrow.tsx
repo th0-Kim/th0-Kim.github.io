@@ -12,6 +12,12 @@ const BottomArrow: React.FC = () => {
       const scrollTop = window.scrollY;
       const innerH = window.innerHeight;
       const domH = document.body.scrollHeight;
+      const footerTop = document
+        .querySelector("footer")
+        ?.getBoundingClientRect().top;
+
+      if (footerTop === undefined) return;
+
       if (innerH + scrollTop >= domH) {
         domArrowArea.classList.remove("normal");
         domArrowArea.classList.remove("bottom");
@@ -20,7 +26,7 @@ const BottomArrow: React.FC = () => {
         domArrowArea.classList.remove("bottom");
         domArrowArea.classList.remove("top");
         domArrowArea.classList.add("normal");
-      } else {
+      } else if (scrollTop > 30 && footerTop > innerH) {
         domArrowArea.classList.remove("normal");
         domArrowArea.classList.remove("top");
         domArrowArea.classList.add("bottom");
@@ -119,7 +125,7 @@ const ArrowContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    bottom: 0.5rem;
+    bottom: 2rem;
     right: 0.5rem;
     width: 1.5rem;
     height: 3rem;
@@ -135,10 +141,10 @@ const ArrowContainer = styled.div`
 
   @keyframes moving {
     from {
-      bottom: -50px;
+      transform: translateY(10rem);
     }
     to {
-      bottom: 0;
+      transform: translateY(0);
     }
   }
 `;

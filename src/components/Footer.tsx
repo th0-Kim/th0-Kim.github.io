@@ -6,7 +6,14 @@ const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <div>PORTFOLIO · WEB UI Developer</div>
-      <div>2024 · Made by React &amp; TypeScript</div>
+      <div>
+        Made by React
+        <XSmall>&amp;</XSmall>
+        TypeScript
+        <XSmall>&amp;</XSmall>
+        VanillaJS
+      </div>
+      <SmallDes>Update : 2025.04.02</SmallDes>
       <ButtonTop
         type="button"
         onClick={() => {
@@ -29,6 +36,15 @@ const Footer: React.FC = () => {
     </FooterContainer>
   );
 };
+
+const XSmall = styled.span`
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+`;
+const SmallDes = styled.div`
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+`;
 
 const ButtonTop = styled.button`
   opacity: 0.6;
