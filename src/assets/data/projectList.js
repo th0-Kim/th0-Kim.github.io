@@ -43,7 +43,7 @@ export let projectData = [
   //   ],
   //   url: null,
   // },
-  // LG 전자 마이크로사이트
+  // LG 전자 마이크로사이트(경험패키지)
   {
     highlight: false,
     year: "2024",
