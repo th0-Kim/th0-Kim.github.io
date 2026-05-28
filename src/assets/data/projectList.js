@@ -43,13 +43,55 @@ export let projectData = [
   //   ],
   //   url: null,
   // },
+  // SBI저축은행
+  {
+    highlight: true,
+    year: "2025",
+    period: "2025.05.12 ~ 2026.04.24",
+    image: "publImg35.webp",
+    company: "SBI저축은행",
+    name: "SBI저축은행의 아이서비스(인터넷뱅킹) 구축 및 대출 서비스 통합 프로젝트",
+    skills: [
+      {
+        color: "type_lang",
+        skillName: ["HTML", "Javascript", "jQuery"],
+      },
+      {
+        color: "type_style",
+        skillName: ["CSS"],
+      },
+      {
+        color: "type_tool",
+        skillName: ["VSCODE", "Eclipse"],
+      },
+      {
+        color: "label_gui",
+        skillName: ["Figma"],
+      },
+      {
+        color: "type_vcs",
+        skillName: ["ChangeFlow", "SVN"],
+      },
+      {
+        color: "type_a11y",
+        skillName: ["웹접근성", "웹표준"],
+      },
+    ],
+    kind: "적응형 웹(Mobile, PC, APP)",
+    rate: "Mobile 100%, PC 50%, APP 10%/5인 투입",
+    subscript:
+      "SBI저축은행 아이계좌 관리를 할 수 있는 서비스를 구축하고 각 채널에서 이용했던 대출 서비스를 통합 구축 프로젝트로 고객이 쉽고 편리하게 금융 서비스를 이용할 수 있도록 지원",
+    contribution: [],
+    url: "https://sbisb.co.kr",
+  },
+
   // LG 전자 마이크로사이트(경험패키지)
   {
     highlight: false,
     year: "2024",
     period: "2024.04.01 ~ 2024.11.06",
     image: "publImg.webp",
-    company: "[오픈 준비중] LG전자",
+    company: "LG전자",
     name: "마이크로사이트",
     skills: [
       {
@@ -210,7 +252,7 @@ export let projectData = [
   },
   // 현대 수소 상용
   {
-    highlight: true,
+    highlight: false,
     sort: 5,
     year: "2023",
     period: "2023.06.05 ~ 2023.08.30",
@@ -252,7 +294,7 @@ export let projectData = [
         list: "GASP와 애니메이션을 사용하여 시각적인 효과 적용",
       },
       {
-        list: "Gulp를 include 기능을 사용하여 재사용성을 높인 컴포넌트 구조 설계",
+        list: "Gulp의 include 기능을 사용하여 재사용성을 높인 컴포넌트 구조 설계",
       },
       {
         list: "작업범위:Home, Our Network 지도, Our Business, Newsroom, Contact Us",
@@ -306,7 +348,7 @@ export let projectData = [
       "42dot의 자율주행 및 모빌리티 솔루션을 소개하고 채용과 블로그가 있는 홈페이지 리뉴얼",
     contribution: [
       {
-        list: "Gulp를 include 기능을 사용하여 재사용성을 높인 컴포넌트 구조 설계",
+        list: "Gulp의 include 기능을 사용하여 재사용성을 높인 컴포넌트 구조 설계",
       },
       {
         list: "작업범위: Software-Defined Vehicle, Software-Defined Fleet, TAP! 소개, FAQ, Open Roles, 42dot Way, blog",
@@ -501,7 +543,7 @@ export let projectData = [
       "KT 인터넷망을 사용하는 알뜰폰 사업자를 통합하여 가입, 회선 추가, 요금제 변경 등 ‘KT 마이알뜰폰’ 웹/앱에서 모두 이용하는 서비스 구축",
     contribution: [
       {
-        list: "Gulp를 include 기능을 사용하여 재사용성을 높인 컴포넌트 구조 설계",
+        list: "Gulp의 include 기능을 사용하여 재사용성을 높인 컴포넌트 구조 설계",
       },
       {
         list: "유관부서와의 적극적 소통을 통해 업무 지연 방지 및 프로세스 적립",
@@ -697,7 +739,7 @@ export let projectData = [
   {
     highlight: false,
     year: "2021",
-    period: "2021.03.31 ~ 2021.04.31",
+    period: "2021.03.31 ~ 2021.04.30",
     image: "publImg.webp",
     company: "KT",
     name: "가족 안심안전 서비스 구축",

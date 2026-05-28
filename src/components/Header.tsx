@@ -163,7 +163,7 @@ const HeaderContainer = styled.header`
 const mainTitle = {
   label: "PORTFOLIO",
   title: "WEB UI Developer, \nKim So Young",
-  subTitle: "경력 7년 11개월",
+  subTitle: "경력 9년차",
 };
 const arrSkills = [
   "HTML5",
@@ -181,6 +181,7 @@ const arrEnvs = [
   "Visual Studio Code",
   "Eclipse",
   "GitLab",
+  "ChangeFlow",
   "Jira",
   "Slack",
   "Confluence",
