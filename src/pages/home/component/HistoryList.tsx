@@ -31,6 +31,13 @@ const ProjectList: React.FC = () => {
           });
         }, delay);
       });
+
+      // remove active class when all tab is clicked
+      if (items.classList.contains("all-active")) {
+        rows.forEach((row, idx) => {
+          row.classList.remove("active");
+        });
+      }
     }
   };
   // tab after list show
@@ -145,6 +152,7 @@ const List = styled.div`
     width: 100%;
   }
   &.all-active {
+    // all lists show
     ${Row} {
       opacity: 1;
       bottom: 0;
