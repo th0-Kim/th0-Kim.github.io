@@ -20,29 +20,27 @@ const ProjectList: React.FC = () => {
   };
   // list fade Effect
   const tabInnerScroll = (items: HTMLElement | null) => {
-    if (items) {
+    if (items?.classList.contains("all-active") === false) {
       const rows = Array.from(items.children) as HTMLElement[];
       rows.forEach((row, idx) => {
         // set active class
         const delay = 200;
         setTimeout(() => {
           handleScrollActive(row, () => {
+            if (items.classList.contains("all-active")) return;
             row.classList.add("active");
           });
         }, delay);
       });
-
-      // remove active class when all tab is clicked
-      if (items.classList.contains("all-active")) {
-        rows.forEach((row, idx) => {
-          row.classList.remove("active");
-        });
-      }
     }
   };
   // tab after list show
   const handleTabList = () => {
     listRef.current?.classList.add("all-active");
+    Array.from(listRef.current?.children ?? []).forEach((row, i) => {
+      row.classList.remove("active");
+      console.log(i, row.className);
+    });
   };
 
   useEffect(() => {
@@ -98,7 +96,7 @@ const ProjectList: React.FC = () => {
                 />
               ))
               .filter(
-                (element): element is JSX.Element => element !== undefined
+                (element): element is JSX.Element => element !== undefined,
               )
           : projectData
               .map((item, index) => (
@@ -114,7 +112,7 @@ const ProjectList: React.FC = () => {
                 />
               ))
               .filter(
-                (element): element is JSX.Element => element !== undefined
+                (element): element is JSX.Element => element !== undefined,
               )}
       </List>
     </ProjectListContainer>
