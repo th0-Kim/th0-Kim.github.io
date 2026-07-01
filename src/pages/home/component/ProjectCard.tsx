@@ -52,7 +52,7 @@ const ProjectCard: React.FC<Props> = ({
                 <span>이동하기</span>
               </Link>
             ) : (
-              <NoneLink>이동불가</NoneLink>
+              <NoneLink>WebOs/APP</NoneLink>
             )}
           </ProjectLink>
           <ProjectLabelBox>
@@ -65,7 +65,7 @@ const ProjectCard: React.FC<Props> = ({
                   >
                     {name}
                   </ProjectLabel>
-                ))
+                )),
               )}
             </ProjectLabelInner>
           </ProjectLabelBox>
@@ -373,7 +373,10 @@ const CardContainer = styled.div`
   backdrop-filter: blur(4.5px);
   box-shadow: 0 0.8rem 3.2rem 0 rgba(var(--color_shadow), 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  transition: background 0.5s ease, right 0.5s ease, bottom 0.5s ease;
+  transition:
+    background 0.5s ease,
+    right 0.5s ease,
+    bottom 0.5s ease;
   &.active {
     opacity: 1;
     right: 0;
