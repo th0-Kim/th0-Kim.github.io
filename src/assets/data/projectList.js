@@ -214,7 +214,7 @@ export let projectData = [
   {
     highlight: false,
     year: "2024",
-    period: "2025.10.07 ~	2025.11.06",
+    period: "2024.10.07 ~	2024.11.06",
     image: "publImg.webp",
     company: "[업무 지원] 삼성에스원",
     name: "차량관제시스템 리뉴얼",

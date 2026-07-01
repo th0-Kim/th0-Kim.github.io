@@ -15,6 +15,11 @@ const ProjectList: React.FC = () => {
   const listRef = useRef<HTMLDivElement>(null);
   const [selectedYear, setSelectedYear] = useState<string>("all");
   const selectedData = projectData.filter((item) => item.year === selectedYear);
+  const sortedProjectData = [...projectData].sort(
+    (a, b) => Number(b.year.trim()) - Number(a.year.trim()),
+  );
+  const displayData = selectedYear === "all" ? sortedProjectData : selectedData;
+
   const handleTabClick = (year: string) => {
     setSelectedYear(year);
   };
@@ -39,7 +44,6 @@ const ProjectList: React.FC = () => {
     listRef.current?.classList.add("all-active");
     Array.from(listRef.current?.children ?? []).forEach((row, i) => {
       row.classList.remove("active");
-      console.log(i, row.className);
     });
   };
 
@@ -81,39 +85,18 @@ const ProjectList: React.FC = () => {
         ))}
       </SectionTab>
       <List ref={listRef}>
-        {selectedYear !== "all"
-          ? selectedData
-              .map((item, index) => (
-                <Row
-                  key={index.toString()}
-                  className={`history-row`.trim()}
-                  company={item.company}
-                  period={item.period}
-                  name={item.name}
-                  skills={item.skills}
-                  kind={item.kind}
-                  rate={item.rate}
-                />
-              ))
-              .filter(
-                (element): element is JSX.Element => element !== undefined,
-              )
-          : projectData
-              .map((item, index) => (
-                <Row
-                  key={index.toString()}
-                  className={`history-row`.trim()}
-                  company={item.company}
-                  period={item.period}
-                  name={item.name}
-                  skills={item.skills}
-                  kind={item.kind}
-                  rate={item.rate}
-                />
-              ))
-              .filter(
-                (element): element is JSX.Element => element !== undefined,
-              )}
+        {displayData.map((item, index) => (
+          <Row
+            key={index.toString()}
+            className="history-row"
+            company={item.company}
+            period={item.period}
+            name={item.name}
+            skills={item.skills}
+            kind={item.kind}
+            rate={item.rate}
+          />
+        ))}
       </List>
     </ProjectListContainer>
   );
